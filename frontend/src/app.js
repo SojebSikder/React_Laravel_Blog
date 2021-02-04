@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import Home from './templates/home/home';
+
 export default class app extends Component {
   render() {
     return (
@@ -13,7 +15,7 @@ export default class app extends Component {
             <h1>Users</h1>
           </Route>
           <Route exact={true} path="/">
-            <h1>Home</h1>
+            <Home />
           </Route>
           <Route path="*">
             <h1>404 Error</h1>
